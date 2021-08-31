@@ -77,7 +77,7 @@ def channel0p_B0(EE, Λ, A, B, r0, C11, C10, E11, E10, ith, jth, m1=Dstpm, m2=Ks
 
     # Invariant mass distribution
     pKp = sp.sqrt(Kallen(EE**2, Kpm**2, Dpm**2) ) / 2 / EE
-    pDp = sp.sqrt(Kallen(B0**2, EE**2, Dpm**2) ) / 2 / B0 
+    pDp = sp.sqrt(Kallen(B0**2, EE**2, D0**2) ) / 2 / B0 
 
     dist = 1/2/sp.pi**3 * 1/16/B0 * sp.Abs(Ppr[ith, jth])**2 * sp.Abs(pKp) * sp.Abs(pDp)
 
